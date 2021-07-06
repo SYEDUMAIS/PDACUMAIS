@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function setInputvalues() {
+            var F1=document.getElementById("F")
+            var M1=document.getElementById("M")
+            var L1=document.getElementById("L")
+            var Full1=document.getElementById(" Full")
+            Full1.value = F1.value+" "+M1.value+" "+L1.value
+        }
+        function allclear(){
+            var clrFull=document.getElementById("Full")
+            Full.value=" "
+        }
+
+        
+    </script>
+</head>
+<body>
+    <h1>Employee Details</h1><hr>
+    <h3>personal info</h3>
+    <label>First Name</label>
+    <input type="text" id="F"><br><br>
+    <label>Middle Name</label>
+    <input type="text" id="M"><br><br>
+    <label>Last Name</label>
+    <input type="text" id="L"><br><br>
+    <label>Full Name</label>
+    <input type="text" id="Full"><br><br>
+    <button onclick="setInputValues()">Full Name</button>
+    <button onclick="allclear()">Clear</button>
+
+</body>
+</html>

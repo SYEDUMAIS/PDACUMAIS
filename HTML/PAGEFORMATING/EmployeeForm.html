@@ -1,65 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <!---------JAVASCRIPT FOR ONCLICK ACTION------------>
 
     <script>
-        function takeall() {
-            var First=document.getElementById ("F1")
-            var Middle=document.getElementById ("M1")
-            var Last=document.getElementById ("L1")
-            var Full=document.getElementById ("FULL1")
-            Full.value= First.value+" "+Middle.value+" "+Last.value
+      // COLLECTION OF NAMES IN FULL NAME
+      function COLLECTALL() {
+        var getF1 = document.getElementById("FIRST_NAME1");
+        var getM1 = document.getElementById("MIDDLE_NAME1");
+        var getL1 = document.getElementById("LAST_NAME1");
+        var getFULL1 = document.getElementById("FUL_NAME1");
+        getFULL1.value = getF1.value + " " + getM1.value + " " + getL1.value;
+      }
 
-        }
-
-        // Clear Full name only
-
-        function clearit() {
-            var clrFull=document.getElementById("FULL1")
-            clrFull.value=" "
-
-
-
-        }
+      // CLEAR ALL FROM INPUT FIELDS
+      function CLEARALL() {
+        var clrF1 = document.getElementById("FIRST_NAME1");
+        clrF1.value = null;
+        var clrM1 = document.getElementById("MIDDLE_NAME1");
+        clrM1.value = null;
+        var clrL1 = document.getElementById("LAST_NAME1");
+        clrL1.value = null;
+        var clrFULL1 = document.getElementById("FUL_NAME1");
+        clrFULL1.value = null;
+      }
     </script>
+  </head>
+  <body>
+    <!-- MAIN HEADING ------------------->
+    <h1>PDAC JS LAB SESSION</h1>
+    ____________________________<br /><br />
 
+    <!-- LAB SESSION DEV DETAILS -->
+    <label>Full Name <span style="color: red">*</span></label> <br />
+    <input type="text" /> <br /><br />
+    <label>Email ID <span style="color: red">*</span></label
+    ><br />
+    <input type="text" /> <br />
+    <br />
+    <hr />
 
+    <!-- EMPLOYEE NAME DETAILS INPUT -->
+    Design a Employee Details as below in HTML <span style="color: red">*</span>
+    <h2>EMPLOYEE DETAILS</h2>
+    The fields specified with <span style="color: red">*</span> are mandetory.
+    <br />
+    ____________________________<br /><br />
+    <label>First Name <span style="color: red">*</span></label> <br />
+    <input type="text" id="FIRST_NAME1" /><br /><br />
+    <label>Middle Name <span style="color: red">*</span></label> <br />
+    <input type="text" id="MIDDLE_NAME1" /><br /><br />
+    <label>Last Name <span style="color: red">*</span></label> <br />
+    <input type="text" id="LAST_NAME1" /><br /><br />
+    <label>Full Name</label><br />
+    <input type="text" id="FUL_NAME1" /><br /><br />
+    <button onclick="COLLECTALL()">GET FULL NAME</button>
 
-
-
-
-</head>
-<body>
-
-    <h1>EMPLOYEE DETAILS</h1>
+    <button onclick="CLEARALL()">CLEAR ALL</button>
     <hr>
-    <h4>Personal Details</h4>
-    <label>First Name</label>
-    <input type="text" id="F1">
-    <br><br>
-    <label>Middle Name</label>
-    <input type="text" id="M1">
-    <br><br>
-    <label>Last Name</label>
-    <input type="text" id="L1">
-    <br><br>
-    <label>Full Name</label>
-    <input type="text" id="FULL1">
-    <br><br>
-    <button onclick="takeall()">
-        Get Full Name
-        </button>
-        <br><br>
-        <button onclick="clearit()" >
-        Clear Full Name
-        </button>
 
-
-    
-</body>
+    <select name="FORM1" id="EMPLOYEEFORM1">
+        <option value="Choose Option">Choose Option </option>
+        <option value="Done">Done</option>
+        <option value="In Progress">In Progress</option>
+        
+      </select>
+  </body>
 </html>

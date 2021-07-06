@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!---------JAVASCRIPT FOR ONCLICK ACTION------------>
+
+    <script>
+        function takeall() {
+            var First=document.getElementById ("F1")
+            var Middle=document.getElementById ("M1")
+            var Last=document.getElementById ("L1")
+            var Full=document.getElementById ("FULL1")
+            Full.value= First.value+" "+Middle.value+" "+Last.value
+
+        }
+
+        // Clear Full name only
+
+        function clearit() {
+            var clrFull=document.getElementById("FULL1")
+            clrFull.value=" "
+
+
+
+        }
+    </script>
+
+
+
+
+
+
+</head>
+<body>
+
+    <h1>EMPLOYEE DETAILS</h1>
+    <hr>
+    <h4>Personal Details</h4>
+    <label>First Name</label>
+    <input type="text" id="F1">
+    <br><br>
+    <label>Middle Name</label>
+    <input type="text" id="M1">
+    <br><br>
+    <label>Last Name</label>
+    <input type="text" id="L1">
+    <br><br>
+    <label>Full Name</label>
+    <input type="text" id="FULL1">
+    <br><br>
+    <button onclick="takeall()">
+        Get Full Name
+        </button>
+        <br><br>
+        <button onclick="clearit()" >
+        Clear Full Name
+        </button>
+
+
+    
+</body>
+</html>

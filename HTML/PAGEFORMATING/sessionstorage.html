@@ -11,47 +11,40 @@
       function COLLECTALL() {
         var getF1 = document.getElementById("name");
         var getM1 = document.getElementById("password");
+        var getmycolor=document.getElementById("mycolor")
 
         sessionStorage.setItem('username', getF1.value)
         sessionStorage.setItem('userpassword', getM1.value)
+        sessionStorage.setItem('myfavcolor', getmycolor.value)
         
       }
       function SHOWALL() {
         var getF1 = document.getElementById("name");
         var getM1 = document.getElementById("password");
+        var getmycolor= document.getElementById("bodycolor")
 
         getF1.value=sessionStorage.getItem('username')
-        getM1.value=sessionStorage.getItem('userpassword',)
+        getM1.value=sessionStorage.getItem('userpassword')
+        getmycolor.style=`background-color: ${sessionStorage.getItem('myfavcolor')}`
       
       }
 
       
     </script>
   </head>
-  <body>
-    <!-- MAIN HEADING ------------------->
-    <h1>PDAC JS LAB SESSION</h1>
-    ____________________________<br /><br />
-
-    <!-- LAB SESSION DEV DETAILS -->
-    <label>Full Name <span style="color: red">*</span></label> <br />
-    <input type="text" /> <br /><br />
-    <label>Email ID <span style="color: red">*</span></label
-    ><br />
-    <input type="text" /> <br />
-    <br />
-    <hr />
-
+  <body id="bodycolor">
     <!-- EMPLOYEE NAME DETAILS INPUT -->
     Design a Employee Details as below in HTML <span style="color: red">*</span>
     <h2>EMPLOYEE DETAILS</h2>
     The fields specified with <span style="color: red">*</span> are mandetory.
     <br />
     ____________________________<br /><br />
-    <label>First Name: <span style="color: red">*</span></label> <br />
+    <label>User Name: <span style="color: red">*</span></label> <br />
     <input type="text" id="name" /><br /><br />
     <label>PASSWORD: <span style="color: red">*</span></label> <br />
     <input type="password" id="password" /><br /><br />
+    
+    <input type="color" id="mycolor">
     <button onclick="COLLECTALL()">Submit</button>
     
         

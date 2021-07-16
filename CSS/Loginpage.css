@@ -1,0 +1,64 @@
+body
+{
+    background-image: url(../HTML/PAGEFORMATING/south-aussi.jpg);
+    background-size: cover;
+}
+h1
+{
+    text-align: center;
+}
+h3
+{
+    text-align: center;
+    padding-top: 20px;
+}
+.loginclass
+{
+    border-color: solid 2px rgba(255, 255, 255, 0.801);
+    width: 300px;
+    height: 400px;
+    margin: auto;    
+    margin-top: 40px;
+}
+.imgclass
+{
+    width: 80px;
+    height: 80px;
+    font-weight: bold;
+    margin-left: 800px;
+    margin-top: 40px;
+    position: absolute;
+}
+::placeholder
+{
+    color: brown;
+}
+.paraclass
+{
+    font-size: 20px;
+    font-family: 'Segoe UI';
+}
+input
+{
+    border-radius: 20px;
+    padding: 10px;
+    outline: none;
+}
+button
+{
+    width: 100px;
+    padding: 6px;
+    border-radius: 10px;
+    margin-left: 12px;
+}
+.border1
+{
+    background-color: rgba(95, 158, 160, 0.671);
+    width: 300px;
+    height: 400px;
+    margin: auto;
+    margin-top: 80px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 0 10px black;
+}

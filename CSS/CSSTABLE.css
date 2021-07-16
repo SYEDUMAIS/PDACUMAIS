@@ -1,0 +1,104 @@
+/* -------------------anchors------------------ */
+.myanchor
+{
+    padding: 10px 50px 10px 10px;
+    font-size: 20px;
+    text-decoration: none;
+    background-color: steelblue;
+
+}
+a
+{
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+/* -------------Home titile--------------- */
+.mydata
+{
+    text-align: center;
+    padding: 20px;
+    background-color: blanchedalmond;
+}
+
+/* -----------table style -----------------*/
+.mytable
+{
+    background-color: blanchedalmond;
+    padding: 10px;
+}
+.table1
+{
+    margin: auto;
+    border-radius: 10px;
+    color: black
+}
+th
+{
+    padding: 25px;
+    background-color: rgb(241, 158, 158);
+    border-radius: 8px;
+}
+tr:nth-child(even)
+{
+    background-color: rgb(238, 238, 127);
+    padding: 40px;
+}
+tr:nth-child(odd)
+{
+    background-color: rgb(154, 235, 235);
+    padding: 40px;
+}
+td
+{
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+/* -------------------dropdown-------------------- */
+.dropdwn1 a
+{
+    display: block;
+}
+
+.dropdwn1
+{
+    display: inline-block;
+}
+.servicetype{
+    position: absolute;
+    padding: 5px;
+    width: 180px;
+    display: none;
+}
+.dropdwn1:hover .servicetype
+{
+    display: block;
+    text-align: center;
+    background: rgb(245, 230, 171);
+    border-radius: 20px;
+}
+i
+{
+    padding: 5px;
+}
+
+/* ----------------------paragraph 1 css------------------ */
+.imgpara
+{
+    background-color: chartreuse;
+    padding: 20px;
+}
+
+.image1
+{
+    height: 200px;
+    float: right;
+    padding: 10px;
+}
+
+.para1
+{
+    text-align: justify;
+}

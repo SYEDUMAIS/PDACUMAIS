@@ -1,0 +1,62 @@
+/* -----------main division-------- */
+body
+{
+    background-image: url(../HTML/PAGEFORMATING/south-aussi.jpg);
+    background-size: cover;
+    
+}
+
+/* -------------contact us heading 1---------- */
+h1
+{
+    color: burlywood;
+    font-family: cursive;
+    margin-left: 400px;
+}
+h2
+{
+    text-align: center;
+    color: white;
+}
+/* ------------------user login png css------------ */
+.imageclass
+{
+    width: 120px;
+    height: 120px;
+    margin-left: 800px;
+    position: absolute;
+}
+/* -----------form allignment------------- */
+.form1
+{
+    color: white;
+    background: rgba(153, 205, 50, 0.472);
+    padding: 60px 20px 10px 20px;
+    width: 300px;
+    box-shadow: 0 0 10px black;
+    margin-left: 800px;
+    margin-top: 80px;
+}
+a
+{
+    color: red
+}
+/* -------------- */
+button
+{
+    width: 120px;
+    padding: 4px;
+    margin-right: 10px;
+}
+/* -----------------input fiels size------------ */
+.inputclass
+{
+    width: 200px;
+    padding: 5px;
+}
+/* --------------email and password text css---------- */
+.email1
+{
+    font-family: 'Lucida Sans Unicode';
+    font-size: 20px;
+}

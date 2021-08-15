@@ -1,0 +1,52 @@
+h1
+{
+    color: rgb(161, 75, 75);
+    font-family: fantasy;
+    text-align: center;
+}
+h2,h3,h4,h5
+{
+    display: none;
+    text-align: center;
+}
+img
+{
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+@media(max-width:500px)
+{
+    body{
+        background-image: url(../HTML/PAGEFORMATING/south-aussi.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 900px;
+        
+    }
+    h2
+    {
+        display: block;
+        font-size: 40px;
+        color: white;
+    }
+    p
+    {
+        color: white;
+        font-size: 22px;
+        text-align: justify;
+    }
+}
+
+@media(min-width:501px) and (max-width:800px)
+{
+    body{
+        background: lightblue;
+        }
+    h3
+    {
+        display: block;
+        font-size: 40px;
+        color: white;
+    }
+}
